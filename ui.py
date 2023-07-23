@@ -3,7 +3,6 @@ from crud import save, load, update, search_car_from_data, edit_car,delete
 
 def create_car():
     global errors
-    # self.model}, {self.year}, {self.color}, {self.numberplate},{self.holder_name},{self.last_garage_visit},{self.last_treatment}
     errors = []
     model  = input("car model: ")
     year = input("car year: ")
