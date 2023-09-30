@@ -2,12 +2,12 @@ import pickle
 from my_classes import Car
 
 #save function
-def save(data,file:str="contacts.pickle"):
+def save(data,file:str="db.pickle"):
     with open(file,"wb") as f:
         pickle.dump(data,f)
 
 #load function
-def load(file:str="contacts.pickle"):
+def load(file:str="db.pickle"):
     with open(file,"rb") as f:
         data = pickle.load(f)
         return data
